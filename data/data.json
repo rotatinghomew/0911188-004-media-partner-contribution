@@ -1,0 +1,60 @@
+{
+  "definition": {
+    "name": "联合报道协作台账",
+    "subject": "工作记录",
+    "table": "contributions",
+    "group": "partner",
+    "measure": "hours"
+  },
+  "tables": {
+    "agreements": [
+      {
+        "agreement_id": "a1",
+        "project": "shared-coast",
+        "version": 1,
+        "status": "active"
+      },
+      {
+        "agreement_id": "a2",
+        "project": "shared-coast",
+        "version": 2,
+        "status": "active"
+      }
+    ],
+    "stories": [
+      {
+        "story_id": "s1",
+        "project": "shared-coast",
+        "published_by": "north-review"
+      },
+      {
+        "story_id": "s2",
+        "project": "shared-coast",
+        "published_by": "delta-journal"
+      }
+    ],
+    "contributions": [
+      {
+        "work_id": "w1",
+        "story_id": "s1",
+        "partner": "north-review",
+        "kind": "interview",
+        "hours": 5
+      },
+      {
+        "work_id": "w2",
+        "story_id": "s1",
+        "partner": "delta-journal",
+        "kind": "translation",
+        "hours": 3
+      },
+      {
+        "work_id": "w3",
+        "story_id": "s2",
+        "partner": "delta-journal",
+        "kind": "editing",
+        "hours": 2
+      }
+    ]
+  }
+}
