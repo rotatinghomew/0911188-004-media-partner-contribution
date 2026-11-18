@@ -1,0 +1,126 @@
+{
+  "date": "2026-06-30",
+  "agreements": [
+    {
+      "project": "shared-coast",
+      "id": "v1",
+      "starts": "2026-04-01",
+      "roles": {
+        "north": "editor",
+        "bay": "reporter",
+        "strait": "translator"
+      }
+    },
+    {
+      "project": "shared-coast",
+      "id": "v2",
+      "starts": "2026-06-12",
+      "roles": {
+        "north": "reporter",
+        "bay": "editor"
+      }
+    }
+  ],
+  "stories": [
+    {
+      "id": "s1",
+      "project": "shared-coast",
+      "published_by": "north",
+      "published": "2026-06-16"
+    },
+    {
+      "id": "s2",
+      "project": "shared-coast",
+      "published_by": "bay",
+      "published": "2026-06-30"
+    }
+  ],
+  "revisions": [
+    {
+      "id": "r1",
+      "story": "s1",
+      "day": "2026-06-08",
+      "supersedes": null
+    },
+    {
+      "id": "r2",
+      "story": "s1",
+      "day": "2026-06-15",
+      "supersedes": "r1"
+    },
+    {
+      "id": "r3",
+      "story": "s2",
+      "day": "2026-06-25",
+      "supersedes": null
+    }
+  ],
+  "work": [
+    {
+      "id": "w1",
+      "revision": "r1",
+      "partner": "strait",
+      "day": "2026-06-08",
+      "state": "confirmed",
+      "hours": 4
+    },
+    {
+      "id": "w2",
+      "revision": "r2",
+      "partner": "bay",
+      "day": "2026-06-15",
+      "state": "confirmed",
+      "hours": 5
+    },
+    {
+      "id": "w3",
+      "revision": "r2",
+      "partner": "strait",
+      "day": "2026-06-16",
+      "state": "pending",
+      "hours": 3
+    },
+    {
+      "id": "w4",
+      "revision": "r3",
+      "partner": "north",
+      "day": "2026-06-25",
+      "state": "confirmed",
+      "hours": 7
+    }
+  ],
+  "outcomes": [
+    {
+      "id": "o1",
+      "revision": "r2",
+      "outlet": "north",
+      "reach": 140
+    },
+    {
+      "id": "o2",
+      "revision": "r2",
+      "outlet": "bay",
+      "reach": 82
+    },
+    {
+      "id": "o3",
+      "revision": "r3",
+      "outlet": "bay",
+      "reach": 45
+    }
+  ],
+  "reuse": [
+    {
+      "id": "i1",
+      "work": "w1",
+      "used_by": "r2",
+      "state": "confirmed"
+    },
+    {
+      "id": "i2",
+      "work": "w3",
+      "used_by": "r2",
+      "state": "disputed"
+    }
+  ]
+}
